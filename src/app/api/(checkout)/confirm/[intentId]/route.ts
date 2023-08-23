@@ -9,7 +9,7 @@ export const PUT=async(req: NextRequest)=>{
     try {
         await prisma.order.update({
             where:{
-                intent_id:intent_id
+                id:intent_id
             },
             data:{status:"Being prepared!"},
 
